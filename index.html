@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Hoodie - Very Fast Web App Development</title>
+
+		<meta name="description" content="Hoodie is an Offline First and noBackend architecture for frontend-only web apps.">
+		<meta name="author" content="Lupo Montero">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Hoodie</h1>
+					<h3>Very Fast Web App Development</h3>
+					<p>
+            <small>
+              Por <a href="http://lupomontero.com">Lupo Montero</a>
+              /
+              <a href="http://twitter.com/lupomontero">@lupomontero</a>
+            </small>
+					</p>
+				</section>
+
+				<section>
+          <h2>Qué es?</h2>
+				  <p>
+            Hoodie es una arquitectura <strong>Offline First</strong> y
+            <strong>noBackend</strong> para aplicaciones web "front-end only".
+          </p>
+				</section>
+
+				<section>
+          <h2>La magia</h2>
+          <img src="img/3803592d.apps.berlin.js-28.02.2013-12.png" />
+				</section>
+
+				<section>
+					<section>
+						<h2>El front end</h2>
+					</section>
+					<section>
+						<h2>Datos locales</h2>
+            <img src="img/79815bd8.apps.berlin.js-28.02.2013-13.png" />
+					</section>
+					<section>
+						<h2>hoodie.store</h2>
+            <img src="img/c5eac0d4.apps.berlin.js-28.02.2013-14.png" />
+					</section>
+					<section>
+						<h2>Acceso a datos</h2>
+            <img src="img/9184a4c1.apps.berlin.js-28.02.2013-15.png" />
+					</section>
+					<section>
+						<h2>Store API</h2>
+            <img src="img/47790b1a.apps.berlin.js-28.02.2013-16.png" />
+					</section>
+					<section>
+						<h2>Eventos</h2>
+            <img src="img/e7ce0ee5.apps.berlin.js-28.02.2013-17.png" />
+					</section>
+				</section>
+
+        <section>
+          <section>
+            <h2>El back-end</h2>
+          </section>
+          <section>
+            <h2>Syncronización</h2>
+            <img src="img/7624e6e7.apps.berlin.js-28.02.2013-19.png" />
+          </section>
+          <section>
+            <h2>CouchDB</h2>
+            <img src="img/fbafa7d6.apps.berlin.js-28.02.2013-20.png" />
+          </section>
+          <section>
+            <h2>Node.js</h2>
+            <img src="img/94a384fd.apps.berlin.js-28.02.2013-21.png" />
+          </section>
+          <section>
+            <h2>Flujo de datos</h2>
+            <img src="img/ecac4244.email.gif" />
+          </section>
+        </section>
+
+				<section>
+					<h2>Diseño de Hoodie</h2>
+          <ul>
+            <li>Offline First</li>
+            <li>noBackend</li>
+            <li>“Dreamcode Driven Development (DDD)”</li>
+            <li>As easy as jQuery</li>
+          </ul>
+				</section>
+
+				<section>
+					<h2>Links</h2>
+					<ul>
+						<li><a href="http://hood.ie">http://hood.ie</a></li>
+						<li><a href="https://github.com/hoodiehq">https://github.com/hoodiehq</a></li>
+						<li><a href="http://twitter.com/hoodiehq">@hoodiehq</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>FIN</h1>
+					<h3>Lupo Montero / lupomontero.com</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
